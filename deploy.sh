@@ -125,13 +125,6 @@ if [ -e "$DEPLOYMENT_SOURCE/bower.json" ]; then
   exitWithMessageOnError "bower failed"
 fi
 
-# 5. Execute gulp
-if [-e "$DEPLOYMENT_SOURCE/gulpfile.js"]; then
-    ./node_modules/.bin/gulp publish
-    exitWithMessageOnError "gulp run failed"
-
-  fi
-
 
 ##################################################################################################################################
 
