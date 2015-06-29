@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tommy James Parnell</title>
+    @*Meta*@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tommy James Parnell Web Applications Developer">
+    <meta name="author" content="Tommy James Parnell">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/GithubActivity.css" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <link rel="stylesheet" href="/css/Site.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="google-site-verification" content="G4psmFLJd9nwPIr3OFJoSdrwqodMweq1oipofawZIdc"/>
+    <script async type="text/javascript" src="/js/GAnalytics.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container" id="standardContainer">
+            <span class="profile-outer"><img class="profile-image img-responsive pull-left" src="/img/sqprofile.jpg" alt="Tommy Parnell" /></span>
+            <div class="profile-content pull-left">
+                <h1 class="name">Tommy Parnell</h1>
+                <h2 class="desc">Web Applications Developer</h2>
+                <ul class="social list-inline">
+                    <li><a href="https://twitter.com/TerribleDev"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/pub/tommy-parnell/24/722/63a"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/tparnell8"><i class="fa fa-github-alt"></i></a></li>
+                </ul>
+            </div>
+            <div class="pull-right-md btn-toolbar">
+              @*  @if (!string.IsNullOrWhiteSpace(Model.CurrentBeer))
+                {
+                    <a class="btn btn-warning" href="https://untappd.com/user/tparnell"><i class="fa fa-beer"></i>drinking: @Model.CurrentBeer</a>
+                } *@
+                <a class="btn btn-cta-primary" href="mailto:tparnell8@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+              <section class="about section">
+                  <div class="section-inner">
+                      <h2 class="heading">About Me</h2>
+                      <div class="content">
+                          <p>Ops turned Dev. I love solving huge web problems. I love C#, but I am open to using any language/technology. I really enjoy working with cloud technologies, and utilizing the latest Continuous Integration techniques</p>
+
+                          <p>On my free time I like to play guitar, and tinker with various cloud technologies</p>
+                      </div>
+                  </div>
+              </section>
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Software Engineer <span class="place"><a href="http://vistaprint.com">Vistaprint.com</a></span> <span class="year">(2015 - Present)</span></h3>
+                                <p>
+                                    Software engineer for vistaprint's gallery, and keyword search platform <br/>
+                                    <em>Javascript, C#, Ruby, Bower, Grunt, Rake, MVC 6, SQLServer, Backbone.js, React.js, Jenkins, AWS, ElasticBeanstalk</em> <br/>
+                                </p>
+                                <p><a class="more-link" href="http://vistaprint.com/gallery.aspx?pg=161" target="_blank"><i class="fa fa-external-link"></i> See Gallery Live</a></p>
+
+                            </div>
+                            <div class="item">
+                                <h3 class="title">Lead Systems Administrator <span class="place"><a href="http://vistaprint.com">Vistaprint.com</a></span> <span class="year">(2011 - 2015)</span></h3>
+                                <p>Devops Engineer, Technical lead for our Monitoring team</p>
+                                <p>
+                                    Monitoring the health of and providing support for Vistaprint's globally-distributed production infrastructure. <br/>
+                                    Creating, implementing, and maintaining tools, automation, and applications to support infrastructure and other internal teams. <br/>
+                                    <em>C#, SQL, IIS, SCOM, Nagios, PowerShell, Windows.</em>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://github.com/tparnell8/Untappd.Net/" target="_blank">C# Untappd API</a></h3>
+                                <p class="summary">A provider to allow C# devs to use the Untappd API</p>
+                                <div class="featured-image">
+                                    <a href="https://github.com/tparnell8/Untappd.Net/" target="_blank">
+                                        <img class="img-responsive center-block project-image" src="/img/Untappd2.jpg" alt="Untappd Logo" />
+                                    </a>
+                                    @*<div class="ribbon">
+                                    <div class="text">Fork us on Github</div>
+                                </div>*@
+                                </div>
+
+                                <div class="desc text-left">
+                                    <p>
+                                        I love api wrappers, and I love .net. I wanted to work with untappd, and there was no .NET wrapper. So I decided to make one.
+                                    </p>
+                                </div>
+                                <a class="btn btn-cta-secondary" href="https://github.com/tparnell8/Untappd.Net/" target="_blank"><i class="fa fa-github"></i> Project on github</a>
+                            </div>
+                            @*<div class="item featured text-center">
+                                <h3 class="title"><a href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47" target="_blank">Twitch OAuth Provider C#</a></h3>
+                                <p class="summary">A provider to allow C# devs to log people in with twitch</p>
+                                <div class="featured-image">
+                                    <a href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47" target="_blank">
+                                        <img class="img-responsive project-image" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_BlackLogoURL.png" alt="Twitch Logo" />
+                                    </a>
+                                    @*<div class="ribbon">
+                                        <div class="text">App</div>
+                                    </div>
+                                </div>
+
+                                <div class="desc text-left">
+                                    <p>I am a huge fan of OAuth. Simply speaking it is the mechanism that allows websites to have <i>Login with facebook</i> style buttons. Recently I was working on a project where I wanted to log someone in with <a href="http://twitch.tv" target="blank">Twitch</a>.
+                                        Unfortunately looking through the Internet I was unable to find a .NET implementation.
+                                    </p>
+                                    <p>
+                                        I came across a cool <a href="https://github.com/owin-middleware/OwinOAuthProviders">OWIN Oauth provider</a>, but unfortunately they did not have an implementation for twitch. So I did the grunt work, and submitted <a href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47">a pull request</a>.
+                                    </p>
+                                </div>
+                                <a class="btn btn-cta-secondary" href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47" target="_blank"><i class="fa fa-code-fork"></i> View Pull Request</a>
+                            </div>*@
+                        </div>
+                    </div>
+                </section>
+                @*Blog Posts*@
+                <aside class="blog section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <p></p>
+                        <div id="rss-feeds" class="content">
+                        </div>
+                    </div>
+                </aside>
+                @*Github Feed*@
+                <section class="github section visible-md visible-lg">
+                    <div class="section-inner">
+                        <div id="feed" class="ghfeed feed">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Boston Area</li>
+                                <li><i class="fa fa-file-text-o"></i><span class="sr-only">Resume</span><a href="http://resume.tommyparnell.com">Resume</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Blog:</span><a href="http://blog.tommyparnell.com">Blog</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:tparnell8@gmail.com">tparnell8@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                I am heavily versed in .NET technologies, but that does not mean I cannot work with others. I love JavaScript (including node.js), I can use Ruby, and Dart. I am quick to pick up new technologies.
+                            </p>
+
+                            <div class="skillset">
+
+                                <div class="item">
+                                    <h3 class="level-title">C#/.NET<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="100%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="95%">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="93%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">Azure<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">AWS<span class="level-label">Intermediate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">Ruby<span class="level-label">Intermediate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">Puppet<span class="level-label">Intermediate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">Unity<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="Actively Learning"><i class="fa fa-info-circle"></i></span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="50%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="level-title">XNA/Monogame<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="Actively Learning"><i class="fa fa-info-circle"></i></span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="40%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><a class="more-link" href="https://coderwall.com/tparnell8"><i class="fa fa-external-link"></i> More on Coderwall</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                    <aside class="testimonials aside section">
+                        <div class="section-inner">
+                            <h2 class="heading">Testimonials</h2>
+                            <div class="content">
+                                <div class="item">
+                                    <blockquote class="quote">
+                                        <p><i class="fa fa-quote-left"></i>Tommy has been instrumental at increasing our web presence, but much more than that, he has increased the technological knowledge of our internal staff. Empowering our employees with the tools to edit our website on the fly, and the knowledge to identify improvement areas that can be resolved with proper IT infrastructure. He has also been monumental at creating new internal software, which has exponentially increased our competitive advantage against other companies in our space.</p>
+                                    </blockquote>
+                                    <p class="source"><span class="name">Richard Warren</span><br /><span class="title">Founder Mold Assessing and Remediation Services, LLC</span></p>
+                                </div>
+
+                                <p><a class="more-link" href="https://www.linkedin.com/pub/tommy-parnell/24/722/63a"><i class="fa fa-external-link"></i>More on Linkedin</a></p>
+                            </div>
+                        </div>
+                    </aside>
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> B.S. Information Technology</h3>
+                                <h4 class="university">Southern New Hampshire University <span class="year">(2012-2014)</span></h4>
+                            </div>
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> A.S. Information Technology</h3>
+                                <h4 class="university">GreatBay Community College <span class="year">(2010-2012)</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs" /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li>
+                                <li class="item">
+                                    <span class="title"><strong>Sign Language (US):</strong></span>
+                                    <span class="level">Somewhat Proficient <br class="visible-sm visible-xs" /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="list conferences aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-calendar"></i> <a href="http://monitorama.com/" target="_blank">Monitorama 2015</a> (Portland)</li>
+                                <li><i class="fa fa-calendar"></i> <a href="http://monitorama.com/" target="_blank">Monitorama 2014</a> (Portland)</li>
+                                <li><i class="fa fa-calendar"></i> <a href="http://devopsenterprise.io/">DevOps Enterprise</a> (San Fransisco)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <small class="copyright">tommyparnell.com</small>
+    </div>
+</footer>
+<script src="/components/moment/min/moment.min.js" ></script>
+<script src="/components/jquery/dist/jquery.min.js"></script>
+<script src="/js/respond.js" ></script>
+<script src="/components/mustache/mustache.js" ></script>
+<script src="/components/jquery-rss/dist/jquery.rss.min.js" ></script>
+<script src="/components/jquery.easing/js/jquery.easing.min.js" ></script>
+<script src="/components/lodestoneapi.min/index.js" ></script>
+<script src="/components/bootstrap/dist/js/bootstrap.min.js" ></script>
+<script src="/js/GithubActivity.js" ></script>
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
