@@ -327,7 +327,7 @@
 <script src="/components/lodestoneapi.min/index.js" ></script>
 <script src="/components/bootstrap/dist/js/bootstrap.min.js" ></script>
 <script src="/dist/GithubActivity.js" ></script>
-<script src="/dist/main.js"></script>
+<script src="/js/main.js"></script>
 
 </body>
 
