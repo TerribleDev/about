@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'about.tommyparnell'
     },
-    port: 4000,
+    port: 3000,
   },
 
   test: {
@@ -16,7 +16,7 @@ var config = {
     app: {
       name: 'about.tommyparnell'
     },
-    port: 4000,
+    port: 3000,
   },
 
   production: {
@@ -24,7 +24,7 @@ var config = {
     app: {
       name: 'about.tommyparnell'
     },
-    port: 80,
+    port: 3000,
   }
 };
 

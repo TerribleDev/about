@@ -3,7 +3,8 @@ var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   livereload = require('gulp-livereload'),
   less = require('gulp-less'),
-   concatCss = require('gulp-concat-css');
+   concatCss = require('gulp-concat-css'),
+   uglify = require('gulp-uglify');
 
 gulp.task('less', function () {
   gulp.src('./public/css/*.less')
@@ -36,6 +37,12 @@ gulp.task('develop', function () {
   });
 });
 
+gulp.task('compress', function() {
+  return gulp.src('public/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('public/dist'));
+});
+
 gulp.task('publish', [
   'less'
 ]);
@@ -43,5 +50,6 @@ gulp.task('publish', [
 gulp.task('default', [
   'less',
   'develop',
+  'compress',
   'watch'
 ]);
