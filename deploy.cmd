@@ -114,7 +114,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
   popd
 )
 
-:: 4. Install gulp
+:: 5. Install bower
 IF EXIST "%DEPLOYMENT_TARGET%\bower.json" (
   pushd "%DEPLOYMENT_TARGET%"
   call :ExecuteCmd !NPM_CMD! install bower
