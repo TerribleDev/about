@@ -56,9 +56,9 @@
                   <div class="section-inner">
                       <h2 class="heading">About Me</h2>
                       <div class="content">
-                          <p>Ops turned Dev. I love solving huge web problems. I love C#, but I am open to using any language/technology. I really enjoy working with cloud technologies, and utilizing the latest Continuous Integration techniques</p>
+                          <p>Ops turned Dev. I love solving huge web problems, and creating tools for other developers . I often code in C#, or JavaScript but I am open to using any language/technology. I really enjoy working with cloud technologies, and utilizing the latest Continuous Integration techniques. Lately I have been really interested in Elixir, Node.js, and the new streams API for Java</p>
 
-                          <p>On my free time I like to play guitar, and tinker with various cloud technologies</p>
+                          <p>On my free time I like to play guitar, and tinker with open source projects</p>
                       </div>
                   </div>
               </section>
