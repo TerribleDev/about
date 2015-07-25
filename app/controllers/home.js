@@ -26,6 +26,9 @@ router.get('/', function (req, res, next) {
     untappd.setClientSecret(process.env.untappdsecret);
 
     untappd.userFeed(function(err,obj){
+      if((err != undefined && err != null) || obj.response.checkins.items.length < 1){
+        return res.render('index', {});
+      }
       var validCheckin = null;
      obj.response.checkins.items.forEach(function(checkin){
           console.log(checkin);
