@@ -98,10 +98,13 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 call :SelectNodeVersion
 
 :: 3. Install npm packages
+IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
   call :ExecuteCmd !NPM_CMD! install
+  call :ExecuteCmd !NPM_CMD! install --dev
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
+)
 
 :: 4. Install gulp
 IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
