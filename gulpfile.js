@@ -60,8 +60,7 @@ gulp.task('cachebust', function(){
 gulp.task('publish', [
   'combineCss',
   'minifyJs',
-  'cachebust',
-  'develop'
+  'cachebust'
 ]);
 
 gulp.task('default', [
