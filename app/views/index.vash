@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css" />
 
     <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/css/GithubActivity.css" />
-    <link rel="stylesheet" href="/css/styles.min.css" />
-    <link rel="stylesheet" href="/css/Site.css" />
+
+    <link rel="stylesheet" href="/css/bundle.css" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -320,13 +319,13 @@
 </footer>
 <script src="/components/moment/min/moment.min.js" ></script>
 <script src="/components/jquery/dist/jquery.min.js"></script>
-<script src="/dist/respond.js" ></script>
+<script src="/js/respond.js" ></script>
 <script src="/components/mustache/mustache.js" ></script>
 <script src="/components/jquery-rss/dist/jquery.rss.min.js" ></script>
 <script src="/components/jquery.easing/js/jquery.easing.min.js" ></script>
 <script src="/components/lodestoneapi.min/index.js" ></script>
 <script src="/components/bootstrap/dist/js/bootstrap.min.js" ></script>
-<script src="/dist/GithubActivity.js" ></script>
+<script src="/js/GithubActivity.js" ></script>
 <script src="/js/main.js"></script>
 
 </body>
