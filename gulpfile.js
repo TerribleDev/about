@@ -4,7 +4,7 @@ var gulp = require('gulp'),
   livereload = require('gulp-livereload'),
    concatCss = require('gulp-concat-css'),
    uglify = require('gulp-uglify'),
-   //cachebust = require('gulp-cache-bust'),
+   cachebust = require('gulp-cache-bust'),
    minifyCss = require('gulp-minify-css');
 
 
@@ -60,7 +60,7 @@ gulp.task('cachebust', function(){
 gulp.task('publish', [
   'combineCss',
   'minifyJs',
-  //'cachebust',
+  'cachebust',
   'develop'
 ]);
 
