@@ -320,7 +320,7 @@
 <script src="/components/moment/min/moment.min.js" ></script>
 <script src="/components/jquery/dist/jquery.min.js"></script>
 <script src="/js/respond.js" ></script>
-<script src="/components/mustache/mustache.js" ></script>
+<script src="/components/mustache/mustache.min.js" ></script>
 <script src="/components/jquery-rss/dist/jquery.rss.min.js" ></script>
 <script src="/components/jquery.easing/js/jquery.easing.min.js" ></script>
 <script src="/components/lodestoneapi.min/index.js" ></script>
