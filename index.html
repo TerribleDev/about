@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
     <title>Tommy James Parnell</title>
-    @*Meta*@
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Tommy James Parnell Web Applications Developer">
     <meta name="author" content="Tommy James Parnell">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.css">
 
-    <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/components/font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/css/bundle.css" />
+    <link rel="stylesheet" href="/css/bundle.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <meta name="google-site-verification" content="G4psmFLJd9nwPIr3OFJoSdrwqodMweq1oipofawZIdc"/>
+    <meta name="google-site-verification" content="G4psmFLJd9nwPIr3OFJoSdrwqodMweq1oipofawZIdc">
     <script async type="text/javascript" src="/js/GAnalytics.min.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container" id="standardContainer">
-            <span class="profile-outer"><img class="profile-image img-responsive pull-left" src="/img/sqprofile.jpg" alt="Tommy Parnell" /></span>
+            <span class="profile-outer"><img class="profile-image img-responsive pull-left" src="/img/sqprofile.jpg" alt="Tommy Parnell"></span>
             <div class="profile-content pull-left">
                 <h1 class="name">Tommy Parnell</h1>
                 <h2 class="desc">Web Applications Developer</h2>
@@ -39,10 +39,6 @@
                 </ul>
             </div>
             <div class="pull-right-md btn-toolbar">
-                @if (model.beer != undefined && model.beer != null)
-                {
-                    <a class="btn btn-warning" href="https://untappd.com/user/tparnell"><i class="fa fa-beer"></i>drinking: @model.beer</a>
-                }
                 <a class="btn btn-cta-primary" href="mailto:tparnell8@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
             </div>
         </div>
@@ -68,8 +64,8 @@
                             <div class="item">
                                 <h3 class="title">Software Engineer <span class="place"><a href="http://vistaprint.com">Vistaprint.com</a></span> <span class="year">(2015 - Present)</span></h3>
                                 <p>
-                                    Software engineer for vistaprint's gallery, and keyword search platform <br/>
-                                    <em>Javascript, C#, Ruby, Bower, Grunt, Rake, MVC 6, SQLServer, Backbone.js, React.js, Jenkins, AWS, ElasticBeanstalk</em> <br/>
+                                    Software engineer for vistaprint's gallery, and keyword search platform <br>
+                                    <em>Javascript, C#, Ruby, Bower, Grunt, Rake, MVC 6, SQLServer, Backbone.js, React.js, Jenkins, AWS, ElasticBeanstalk</em> <br>
                                 </p>
                                 <p><a class="more-link" href="http://vistaprint.com/gallery.aspx?pg=161" target="_blank"><i class="fa fa-external-link"></i> See Gallery Live</a></p>
 
@@ -78,8 +74,8 @@
                                 <h3 class="title">Lead Systems Administrator <span class="place"><a href="http://vistaprint.com">Vistaprint.com</a></span> <span class="year">(2011 - 2015)</span></h3>
                                 <p>Devops Engineer, Technical lead for our Monitoring team</p>
                                 <p>
-                                    Monitoring the health of and providing support for Vistaprint's globally-distributed production infrastructure. <br/>
-                                    Creating, implementing, and maintaining tools, automation, and applications to support infrastructure and other internal teams. <br/>
+                                    Monitoring the health of and providing support for Vistaprint's globally-distributed production infrastructure. <br>
+                                    Creating, implementing, and maintaining tools, automation, and applications to support infrastructure and other internal teams. <br>
                                     <em>C#, SQL, IIS, SCOM, Nagios, PowerShell, Windows.</em>
                                 </p>
                             </div>
@@ -96,11 +92,9 @@
                                 <p class="summary">A provider to allow C# devs to use the Untappd API</p>
                                 <div class="featured-image">
                                     <a href="https://github.com/tparnell8/Untappd.Net/" target="_blank">
-                                        <img class="img-responsive center-block project-image" src="/img/Untappd2.jpg" alt="Untappd Logo" />
+                                        <img class="img-responsive center-block project-image" src="/img/Untappd2.jpg" alt="Untappd Logo">
                                     </a>
-                                    @*<div class="ribbon">
-                                    <div class="text">Fork us on Github</div>
-                                </div>*@
+
                                 </div>
 
                                 <div class="desc text-left">
@@ -110,32 +104,11 @@
                                 </div>
                                 <a class="btn btn-cta-secondary" href="https://github.com/tparnell8/Untappd.Net/" target="_blank"><i class="fa fa-github"></i> Project on github</a>
                             </div>
-                            @*<div class="item featured text-center">
-                                <h3 class="title"><a href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47" target="_blank">Twitch OAuth Provider C#</a></h3>
-                                <p class="summary">A provider to allow C# devs to log people in with twitch</p>
-                                <div class="featured-image">
-                                    <a href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47" target="_blank">
-                                        <img class="img-responsive project-image" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_BlackLogoURL.png" alt="Twitch Logo" />
-                                    </a>
-                                    @*<div class="ribbon">
-                                        <div class="text">App</div>
-                                    </div>
-                                </div>
 
-                                <div class="desc text-left">
-                                    <p>I am a huge fan of OAuth. Simply speaking it is the mechanism that allows websites to have <i>Login with facebook</i> style buttons. Recently I was working on a project where I wanted to log someone in with <a href="http://twitch.tv" target="blank">Twitch</a>.
-                                        Unfortunately looking through the Internet I was unable to find a .NET implementation.
-                                    </p>
-                                    <p>
-                                        I came across a cool <a href="https://github.com/owin-middleware/OwinOAuthProviders">OWIN Oauth provider</a>, but unfortunately they did not have an implementation for twitch. So I did the grunt work, and submitted <a href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47">a pull request</a>.
-                                    </p>
-                                </div>
-                                <a class="btn btn-cta-secondary" href="https://github.com/owin-middleware/OwinOAuthProviders/pull/47" target="_blank"><i class="fa fa-code-fork"></i> View Pull Request</a>
-                            </div>*@
                         </div>
                     </div>
                 </section>
-                @*Blog Posts*@
+
                 <aside class="blog section">
                     <div class="section-inner">
                         <h2 class="heading">Latest Blog Posts</h2>
@@ -144,7 +117,7 @@
                         </div>
                     </div>
                 </aside>
-                @*Github Feed*@
+
                 <section class="github section visible-md visible-lg">
                     <div class="section-inner">
                         <div id="feed" class="ghfeed feed">
@@ -256,7 +229,7 @@
                                     <blockquote class="quote">
                                         <p><i class="fa fa-quote-left"></i>Tommy has been instrumental at increasing our web presence, but much more than that, he has increased the technological knowledge of our internal staff. Empowering our employees with the tools to edit our website on the fly, and the knowledge to identify improvement areas that can be resolved with proper IT infrastructure. He has also been monumental at creating new internal software, which has exponentially increased our competitive advantage against other companies in our space.</p>
                                     </blockquote>
-                                    <p class="source"><span class="name">Richard Warren</span><br /><span class="title">Founder Mold Assessing and Remediation Services, LLC</span></p>
+                                    <p class="source"><span class="name">Richard Warren</span><br><span class="title">Founder Mold Assessing and Remediation Services, LLC</span></p>
                                 </div>
 
                                 <p><a class="more-link" href="https://www.linkedin.com/pub/tommy-parnell/24/722/63a"><i class="fa fa-external-link"></i>More on Linkedin</a></p>
@@ -286,11 +259,11 @@
                             <ul class="list-unstyled">
                                 <li class="item">
                                     <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs" /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                    <span class="level">Native Speaker <br class="visible-xs"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
                                 </li>
                                 <li class="item">
                                     <span class="title"><strong>Sign Language (US):</strong></span>
-                                    <span class="level">Somewhat Proficient <br class="visible-sm visible-xs" /><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
+                                    <span class="level">Somewhat Proficient <br class="visible-sm visible-xs"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
                                 </li>
                             </ul>
                         </div>
@@ -317,15 +290,15 @@
         <small class="copyright">tommyparnell.com</small>
     </div>
 </footer>
-<script src="/components/moment/min/moment.min.js" ></script>
+<script src="/components/moment/min/moment.min.js"></script>
 <script src="/components/jquery/dist/jquery.min.js"></script>
-<script src="/js/respond.js" ></script>
-<script src="/components/mustache/mustache.min.js" ></script>
-<script src="/components/jquery-rss/dist/jquery.rss.min.js" ></script>
-<script src="/components/jquery.easing/js/jquery.easing.min.js" ></script>
-<script src="/components/lodestoneapi.min/index.js" ></script>
-<script src="/components/bootstrap/dist/js/bootstrap.min.js" ></script>
-<script src="/js/GithubActivity.js" ></script>
+<script src="/js/respond.js"></script>
+<script src="/components/mustache/mustache.min.js"></script>
+<script src="/components/jquery-rss/dist/jquery.rss.min.js"></script>
+<script src="/components/jquery.easing/js/jquery.easing.min.js"></script>
+<script src="/components/lodestoneapi.min/index.js"></script>
+<script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/GithubActivity.js"></script>
 <script src="/js/main.js"></script>
 
 </body>
