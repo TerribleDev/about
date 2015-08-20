@@ -37,6 +37,8 @@ jQuery(document).ready(function ($) {
             // valid values: any string
             layoutTemplate: "<div class='item'>{entries}</div>",
 
+            ssl: true,
+
             // inner template for each entry
             // default: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>'
             // valid values: any string
