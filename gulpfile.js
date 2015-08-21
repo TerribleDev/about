@@ -8,7 +8,8 @@ var gulp = require('gulp'),
    minifyCss = require('gulp-minify-css'),
    minify = require('html-minifier').minify,
    fs = require("fs"),
-   concat = require('gulp-concat');
+   concat = require('gulp-concat'),
+   rimraf = require('gulp-rimraf');
 
 
 
@@ -16,6 +17,11 @@ var gulp = require('gulp'),
 gulp.task('watch', function() {
   gulp.watch('./css/*.less', ['less']);
   gulp.watch('./css/*.css');
+});
+
+gulp.task('clean', function(){
+  return gulp.src(['js/bowr.js', 'css/bundle.css'], { read: false }) // much faster
+   .pipe(rimraf());
 });
 
 
@@ -82,6 +88,7 @@ gulp.task('cachebust', function(){
 });
 
 gulp.task('publish', [
+  'clean',
   'minfiyCss',
   'minifyHtml',
   'minifyJs',
@@ -89,6 +96,7 @@ gulp.task('publish', [
 ]);
 
 gulp.task('default', [
+  'clean',
   'develop',
   'combineJs',
   'combineCss',
