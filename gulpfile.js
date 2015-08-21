@@ -88,7 +88,6 @@ gulp.task('cachebust', function(){
 });
 
 gulp.task('publish', [
-  'clean',
   'minfiyCss',
   'minifyHtml',
   'minifyJs',
@@ -96,7 +95,6 @@ gulp.task('publish', [
 ]);
 
 gulp.task('default', [
-  'clean',
   'develop',
   'combineJs',
   'combineCss',
