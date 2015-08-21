@@ -20,7 +20,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(){
-  return gulp.src(['js/bowr.js', 'css/bundle.css', 'components/moment/**', 'components/jquery/**'], { read: false }) // much faster
+  return gulp.src(['js/bowr.js', 'css/bundle.css', 'components/moment', 'components/jquery'], { read: false }) // much faster
    .pipe(rimraf());
 });
 
