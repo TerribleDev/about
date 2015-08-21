@@ -6,3 +6,4 @@ public/components
 .idea/
 .settings/
 components/
+css/bundle.css

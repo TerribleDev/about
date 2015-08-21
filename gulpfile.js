@@ -40,6 +40,7 @@ gulp.task('minifyHtml',function(){
 
 gulp.task('minfiyCss', function(){
   return gulp.src('css/*.css')
+   .pipe(concatCss("bundle.css"))
    .pipe(minifyCss({compatibility: 'ie8'}))
    .pipe(gulp.dest('css'));
 });
@@ -73,7 +74,7 @@ gulp.task('cachebust', function(){
 });
 
 gulp.task('publish', [
-  'combineCss',
+  'minfiyCss',
   'minifyHtml',
   'minifyJs',
   'cachebust'
