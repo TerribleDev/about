@@ -7,7 +7,8 @@ var gulp = require('gulp'),
    cachebust = require('gulp-cache-bust'),
    minifyCss = require('gulp-minify-css'),
    minify = require('html-minifier').minify,
-   fs = require("fs");
+   fs = require("fs"),
+   concat = require('gulp-concat');
 
 
 
@@ -58,8 +59,15 @@ gulp.task('develop', function () {
 });
 
 gulp.task('minifyJs', function() {
-  return gulp.src('js/*.js')
+  return gulp.src(['js/*.js', 'components/**/*.min.js'])
     .pipe(uglify())
+    .pipe(concat('bowr.js'))
+    .pipe(gulp.dest('js'));
+});
+
+gulp.task('combineJs', function() {
+  return gulp.src(['js/*.js', 'components/**/*.min.js'])
+    .pipe(concat('bowr.js'))
     .pipe(gulp.dest('js'));
 });
 
@@ -82,6 +90,7 @@ gulp.task('publish', [
 
 gulp.task('default', [
   'develop',
+  'combineJs',
   'combineCss',
   'watch'
 ]);

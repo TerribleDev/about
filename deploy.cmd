@@ -108,7 +108,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 :: 4. Install gulp
 IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd !NPM_CMD! install gulp gulp-cache-bust gulp-concat-css gulp-uglify html-minifier
+  call :ExecuteCmd !NPM_CMD! install gulp gulp-cache-bust gulp-concat-css gulp-uglify html-minifier gulp-concat
   call .\node_modules\.bin\gulp publish
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
