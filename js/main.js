@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+$(document).ready(function ($) {
     $('.level-bar-inner').css('width', '0');
 
     $(window).on('load', function () {
@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
     });
 
     /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
+    //$('.level-label').tooltip();
 
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
     $("#rss-feeds").rss(

@@ -60,7 +60,7 @@ gulp.task('develop', function () {
 
 gulp.task('minifyJs', function() {
   return gulp.src(['components/**/*.min.js','js/*.js'])
-    .pipe(uglify())
+    .pipe(uglify({mangle:false}))
     .pipe(concat('bowr.js'))
     .pipe(gulp.dest('js'));
 });
