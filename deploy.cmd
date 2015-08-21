@@ -110,8 +110,6 @@ IF EXIST "%DEPLOYMENT_TARGET%\bower.json" (
   pushd "%DEPLOYMENT_TARGET%"
   call rmdir .\components /S /Q
   call :ExecuteCmd !NPM_CMD! install bower
-  call rmdir .\components\moment /S /Q
-  call rmdir .\components\jquery /S /Q
   call .\node_modules\.bin\bower install
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
