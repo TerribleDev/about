@@ -25,14 +25,14 @@ gulp.task('clean', function(){
 });
 
 
-gulp.task('combineCss', function(){
+gulp.task('combineCss', ['clean'], function(){
   return gulp.src('./css/*.css')
   .pipe(concatCss("bundle.css"))
   .pipe(gulp.dest('css'));
 
 });
 
-gulp.task('minifyHtml',function(){
+gulp.task('minifyHtml',['clean'],function(){
    var fileContent=fs.readFileSync("index.html", "utf8");
    var fileContent2 = minify(fileContent, {
      removeComments: true,
@@ -45,7 +45,7 @@ gulp.task('minifyHtml',function(){
    fs.writeFileSync('index.html', fileContent2, {});
 });
 
-gulp.task('minfiyCss', function(){
+gulp.task('minfiyCss',['clean'], function(){
   return gulp.src('css/*.css')
    .pipe(concatCss("bundle.css"))
    .pipe(minifyCss({compatibility: 'ie8'}))
@@ -64,14 +64,14 @@ gulp.task('develop', function () {
   });
 });
 
-gulp.task('minifyJs', function() {
+gulp.task('minifyJs',['clean'], function() {
   return gulp.src(['components/**/*.min.js','js/*.js'])
     .pipe(uglify({mangle:false}))
     .pipe(concat('bowr.js'))
     .pipe(gulp.dest('js'));
 });
 
-gulp.task('combineJs', function() {
+gulp.task('combineJs',['clean'], function() {
   return gulp.src(['components/**/*.min.js','js/*.js'])
     .pipe(concat('bowr.js'))
     .pipe(gulp.dest('js'));
@@ -95,8 +95,8 @@ gulp.task('publish', [
 ]);
 
 gulp.task('default', [
-  'develop',
+//  'develop',
   'combineJs',
-  'combineCss',
-  'watch'
+  'combineCss'
+  //,'watch'
 ]);
