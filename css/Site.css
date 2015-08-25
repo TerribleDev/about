@@ -58,7 +58,7 @@ textarea {
     }
 }
 
-@media(min-width: 992px){
+/*@media(min-width: 992px){
     .stick {
     position: fixed;
     top: 0;
@@ -89,7 +89,7 @@ textarea {
     width: 120px;
 }
 
-}
+} */
 
 body{
   padding-top: 0px;

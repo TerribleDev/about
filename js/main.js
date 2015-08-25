@@ -48,12 +48,4 @@ $(document).ready(function ($) {
         }
     );
 
-    $(window).scroll(function () {
-        var sticky = $('.header'),
-            scroll = $(window).scrollTop();
-
-        if (scroll >= 131) sticky.addClass('stick');
-        else sticky.removeClass('stick');
-    });
-
 });
