@@ -108,7 +108,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 :: 5. Install bower
 IF EXIST "%DEPLOYMENT_TARGET%\bower.json" (
   pushd "%DEPLOYMENT_TARGET%"
-  call rmdir .\components /S /Q
+  IF EXIST ".\components" (call rmdir .\components /S /Q)
   call :ExecuteCmd !NPM_CMD! install bower
   call .\node_modules\.bin\bower install
   IF !ERRORLEVEL! NEQ 0 goto error
