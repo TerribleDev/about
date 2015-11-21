@@ -90,8 +90,7 @@ gulp.task('cachebust', function(){
 gulp.task('publish', [
   'minfiyCss',
   'minifyHtml',
-  'minifyJs',
-  'cachebust'
+  'minifyJs'
 ]);
 
 gulp.task('default', [

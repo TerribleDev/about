@@ -10,7 +10,10 @@ deployment:
 test:
   override:
     - npm install -g gulp
+    - npm install -g bower
+    - bower install
     - gulp publish
+    - gulp cachebust
 dependencies:
   cache_directories:
     - "node_modules"    # relative to the build directory
