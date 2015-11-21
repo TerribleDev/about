@@ -1,0 +1,15 @@
+general:
+  branches:
+    ignore:
+      - gh-pages # list of branches to ignore
+deployment:
+  production:
+    branch: master
+    commands:
+      - sh ./deploy.sh
+test:
+  override:
+    - sh ./node_modules/.bin/gulp publish
+dependencies:
+  cache_directories:
+    - "node_modules"    # relative to the build directory
