@@ -9,7 +9,8 @@ deployment:
       - sh ./deploy.sh
 test:
   override:
-    - sh ./node_modules/.bin/gulp publish
+    - npm install -g gulp
+    - gulp publish
 dependencies:
   cache_directories:
     - "node_modules"    # relative to the build directory
