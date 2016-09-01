@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/terribledev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://terribledev.io
+  * I am terribledev (https://keybase.io/terribledev) on keybase.
+  * I have a public key with fingerprint 0038 46D2 1D97 8194 BF5E  D616 1ECB 05E5 739F 3C98
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010169b5f69aca723593668e275e67b2d6304110766f3cfa98c4ca8db7c4b9f4f6d10a",
+            "fingerprint": "003846d21d978194bf5ed6161ecb05e5739f3c98",
+            "host": "keybase.io",
+            "key_id": "1ecb05e5739f3c98",
+            "kid": "010169b5f69aca723593668e275e67b2d6304110766f3cfa98c4ca8db7c4b9f4f6d10a",
+            "uid": "ffcade3f3fbf6c5c54c09310e7b43719",
+            "username": "terribledev"
+        },
+        "service": {
+            "hostname": "terribledev.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1472730682,
+    "expire_in": 157680000,
+    "prev": "d7e2d753c0eca275fc41565f59e351529ec36929ff66612468a1f20076645e2e",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMM6AnicrVJrTBRXGAUKpruA2AVbICgwoqFKyzzvzKwYSksqFA2kbtQGcZ3HHZyy
+7K4zs6toMMVSLdomhQbEB1RXq5XiA0j6pMJaXTUIMQ1pigFBUIlFa1bSh2BpZ2j7
+q/3Z++fLvd85557v5LsY/VSIOXRhT8Qd9aOsxtAe/2FPyLorz1p3ILxLrED0WgZn
+C3SIUNXsZbKIWBEUQzHA8pQEWE7gaJygWAIABuI0BQHN4yIgUBLDUBoAiRAkjmUE
+UuAYkacFkmclUgIihnJIBiLJzlKouBXZqRmyKMGQQMQxkaUZjCV5iYIiwAAGBR6l
+IEUTrC7HMjpxs0s1GLo5nlPhi7JLf9Mv9ll7/4H/n317ZuUkSeBESEiExEtAoASK
+FFCWwFBI8yRBY6wBVKHi5Mqhjtagosi8A4rQi1RmIHrDKwvQyNYY5t+gv4ZyKy7N
+Jbgcem+zprlVq8HVKtwGeCvk7X/L2HnZKeph6gwvVFTZ5USsmI4UNNnQxUgapwkU
+MHgGAre5ZQXaZQNB0YBB9WP8o9uyIiINcZGmCAGFAqfHIgkkRgFKolhIUBiFs1Ag
+AIuzkgQAwHASMBwm4aiRGElBHCLGYFucLsQKdJtcqS6pyqVOTvMoEKm84N8QHhJq
+DpkTEWYsWYjZNO+f1fPejJlBi+hdJ5hc88zlglGbZ8nQr7mRjrasp78znyPbIyId
+N9FJYiS+Y5eS98OZqEJbMGLEqa3oHd1dSYd1j72bexfsay2601KbuPiE13P7cs30
+0uejH80cUZta2o5aojNSPyjLzcm4lj3vPo7l25aFpsfuXRJVZWmY01kdHZ5UtGF9
+76PWzhvExLbnxgcfjG982OVJL+x6uGlK/nZyj0d6ciqv8PuCmPMJw0Rg8fQ9d17f
+YFpTw3jKram5wX3vRBX7EnfG4J+dfmb+wEvl9Wnn5ttOTb3vMw1vHGiYyCye6k3q
+3r12dUSgaejqguUdl5qdtxEpZc+autzx7feV6zP9fUG+Llz+5MNrvkDeANkdmxT5
+y+M3p7kH19fgtRaTVTirlU1Mfnm8+hX429qc0i2kP5v6fTrl1qg6/HYHFu9bmNYZ
+JviW4eZjx2pfPxLmTX3cnph8qSVz7goMslmt8ZaxM3ezY5tLSnIaV6UX265mtSLr
+4nqszfTIzv7k6orzyxOefHw48FP6gheiElKD7fU1r1W12ZLfekOYfPnVsJYrh/Lt
+RRd/3oEs3eu3B2v7yklvYiB/U/gQVVlvqv9mfdQiXjlZt1LdSg8lW+JiD1TdyzfV
+/PjpSf/nY0nl7/XHBcRFk4e++uPohcz9BcfPHtTE1c6vJzQkkqwq6dp+erDhBjO6
+f2jVF3WNB/4EMRS5/A==
+=cv4D
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/terribledev
+
+==================================================================
