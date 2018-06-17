@@ -109,8 +109,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 IF EXIST "%DEPLOYMENT_TARGET%\bower.json" (
   pushd "%DEPLOYMENT_TARGET%"
   IF EXIST ".\components" (call rmdir .\components /S /Q)
-  call :ExecuteCmd !NPM_CMD! install bower
-  call .\node_modules\.bin\bower install
+  call :ExecuteCmd !NPM_CMD! run bower install
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
@@ -119,9 +118,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\bower.json" (
 :: 4. Install gulp
 IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
   pushd "%DEPLOYMENT_TARGET%"
-  call :ExecuteCmd !NPM_CMD! install gulp gulp-cache-bust gulp-concat-css gulp-uglify html-minifier gulp-concat gulp-rimraf
-  call .\node_modules\.bin\gulp clean
-  call .\node_modules\.bin\gulp publish
+  call :ExecuteCmd !NPM_CMD! run gulp publish
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )

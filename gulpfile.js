@@ -78,7 +78,7 @@ gulp.task('combineJs',['clean'], function() {
 });
 
 
-gulp.task('cachebust', function(){
+gulp.task('cachebust', ['clean'], function(){
   return gulp.src('index.html')
       .pipe(cachebust({
           type: 'timestamp'
