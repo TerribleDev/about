@@ -15,8 +15,8 @@ var gulp = require('gulp'),
 
 
 gulp.task('watch', function() {
-  gulp.watch('./css/*.less', ['less']);
-  gulp.watch('./css/*.css');
+  gulp.watch('./css/*.css', ['combineCss']);
+  gulp.watch('./js/*.js', ['combineJs']);
 });
 
 gulp.task('clean', function(){
