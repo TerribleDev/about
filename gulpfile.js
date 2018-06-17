@@ -14,9 +14,9 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('watch', function() {
-  gulp.watch('./css/*.css', ['combineCss']);
-  gulp.watch('./js/*.js', ['combineJs']);
+gulp.task('watch', ['default'], function() {
+  gulp.watch(['./css/*.css', '!./css/bundle.css'], ['combineCss']);
+  gulp.watch(['./js/*.js', '!./js/bowr.js'], ['combineJs']);
 });
 
 gulp.task('clean', function(){
