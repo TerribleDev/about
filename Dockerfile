@@ -1,9 +1,9 @@
 FROM node:8 as build
 WORKDIR /build
-COPY .bowerrc bower.json ./
-RUN npm run bower install
 COPY package.json ./
 RUN npm install
+COPY .bowerrc bower.json ./
+RUN npm run bower install
 COPY . .
 RUN npm run pub
 
